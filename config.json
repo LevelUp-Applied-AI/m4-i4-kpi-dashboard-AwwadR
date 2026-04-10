@@ -1,0 +1,22 @@
+{
+  "monthly_revenue": {
+    "target": 4000,
+    "warning_ratio": 0.9
+  },
+  "monthly_order_volume": {
+    "target": 35,
+    "warning_ratio": 0.9
+  },
+  "revenue_by_city": {
+    "target": 12000,
+    "warning_ratio": 0.9
+  },
+  "avg_order_value_by_category": {
+    "target": 100,
+    "warning_ratio": 0.9
+  },
+  "revenue_by_registration_cohort": {
+    "target": 3000,
+    "warning_ratio": 0.9
+  }
+}
