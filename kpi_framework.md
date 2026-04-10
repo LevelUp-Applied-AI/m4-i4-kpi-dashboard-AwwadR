@@ -1,14 +1,14 @@
 # KPI Framework — Amman Digital Market
 
-In This analysis, I chose 5 KPIs to help us understand the the prformance of the market clearly.
-I tried choosing indicators that covers more than one side Like: Time, Cities, Product Categories and Customers.
+In This analysis, I chose 5 KPIs to help us understand the prformance of the market clearly.
+I tried choosing indicators that cover more than one side such as Time, Cities, Product Categories and Customers.
 
 ---
 
 ## KPI 1
 
 - **Name:** Monthly Revenue
-- **Definition:** This indicator explains the total revenue for each monthe from only the valid orders.
+- **Definition:** This indicator explains the total revenue for each month from only the valid orders.
 - **Formula:** Sum of `quantity × unit_price` grouped by `order_month`
 - **Data Source (tables/columns):**
   - `orders["order_date"]`
@@ -17,8 +17,7 @@ I tried choosing indicators that covers more than one side Like: Time, Cities, P
   - by excluding `orders["status"] = cancelled`
   - by excluding `order_items["quantity"] > 100`
 - **Baseline Value:** Total revenue after cleaning the data was: **48,701.50**
-- **Interpretation:** This KPI helps us show how the sales moved from month to month, and if there are months that stronger than others or not.
----
+- **Interpretation:** This KPI helps us show how the sales moved from month to month, and if some months are stronger than others.
 
 ## KPI 2
 
@@ -30,7 +29,7 @@ I tried choosing indicators that covers more than one side Like: Time, Cities, P
   - `orders["order_date"]`
   - `orders["status"]`
 - **Baseline Value:** The number of valid orders after cleaning was: **443 valid orders**
-- **Interpretation:** This KPI is important for clarifying the makrket demand over time. And we can compare it with the revenue to understand if the increasing came from the higher number of orders or from higher order value.
+- **Interpretation:** This KPI is important for clarifying the market demand over time. And we can compare it with the revenue to understand if the increase came from the higher number of orders or from higher order value.
 
 ---
 
@@ -46,7 +45,7 @@ I tried choosing indicators that covers more than one side Like: Time, Cities, P
   - `order_items["quantity"]`
   - `products["unit_price"]`
 - **Baseline Value:** The top city in revenue was **Amman**
-- **Interpretation:** This KPI helps us know which enhance the most revenue, so we can decide where to fucos marketing or customes follow-up.
+- **Interpretation:** This KPI helps us know which cities generate the most revenue, so we can decide where to focus marketing or customer follow-up.
 
 ---
 
@@ -61,7 +60,7 @@ I tried choosing indicators that covers more than one side Like: Time, Cities, P
   - `order_items["quantity"]`
   - `order_items["order_id"]`
 - **Baseline Value:** The category with the highest average order value was **Books** at about **70**
-- **Interpretation:** This KPI helps us see which categories create higher value orders, and this is uesful for promotions or giving more attention to certain categories. 
+- **Interpretation:** This KPI helps us see which categories create higher value orders, and this is useful for promotions or giving more attention to certain categories. 
 
 **Statistical Validation**
 - **H₀:** There is no difference in average order value between categories
