@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #d9e2ec;
+  color: #1f2937;
+}
+
+.nav-link:hover {
+  background: #eef4ff;
+}
+
+.page-shell {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.control {
+  margin: 12px 0 20px 0;
+}
+
+.info-label {
+  margin: 8px 0 14px 0;
+  font-weight: bold;
+}
